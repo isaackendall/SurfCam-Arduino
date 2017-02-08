@@ -29,12 +29,12 @@ void loop() {
   if(sensorValue > 400 ) //setting a threshold value
   {
   digitalWrite(2,HIGH); //turn relay ON
-  delay(1000);          // wait for a second
+  delay(4000);          // wait for four seconds
   digitalWrite(2, LOW); // turn the LED off by making the voltage LOW
-  delay(1000);          // wait for a second
+  delay(1000);          // wait for five minutes
   }  
 else 
-  digitalWrite(2,HIGH); //turn relay OFF
+  digitalWrite(2,LOW); //turn relay OFF
   
   delay(100);                  
 }
